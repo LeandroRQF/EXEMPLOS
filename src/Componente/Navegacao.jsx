@@ -7,7 +7,7 @@ const Navegacao = props => {
             <header className="App-header">
                 <h1 className="App-title">Rotinas e Componentes em React</h1>
                 <Menu>
-                    <Menu.Item><strong>Rorinas</strong></Menu.Item>
+                    <Menu.Item><strong>Rotinas</strong></Menu.Item>
                     <Menu.Item>Home</Menu.Item>
                     <Menu.Menu position='right'>
                         <Dropdown item text='Acesse aqui'>
