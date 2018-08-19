@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import config from './..//firebase-config'
 import TesteCardItem from './TesteCardItem';
+import TesteCardItem2 from './TesteCardItem2';
 
 class TesteCard extends Component {
     constructor(props) {
@@ -23,8 +24,8 @@ class TesteCard extends Component {
 
     render() {
         return (
-            <div>
-                <div id='portifolio' className='container-fluid text-center bg-grey'>
+            <div className='col-sm-2'>
+                <div id='portifolio' className='container-fluid text-center bg-grey'>                    
                     
                     <div className='row text-center '>
                         {
@@ -33,9 +34,18 @@ class TesteCard extends Component {
                                     return <TesteCardItem key={key} conteudo={this.state.portifolio[key]} />
                                 })
                         }
+                    </div><br />                    
+                
+                    <div className='row text-center '>
+                        {
+                            Object.keys(this.state.portifolio)
+                                .map(key => {
+                                    return <TesteCardItem2 key={key} conteudo={this.state.portifolio[key]} />
+                                })
+                        }
                     </div><br />
-                    
-                </div>
+                </div>    
+                
             </div >
         )
     }

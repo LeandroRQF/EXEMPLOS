@@ -17,13 +17,13 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
         
-        {/*<TesteCard />*/}
-          <Route path='/' exact component={Inicio} />
+        <TesteCard />
+        {/*<Route path='/' exact component={Inicio} />
 
           <Route path='/TesteGrid' component={TesteGrid} />
           <Route path='/TesteCard' componete={TesteCard} />
           <Route path='/TesteCardItem' componente={TesteCardItem}/>
-        
+        */}
         </div>
       </BrowserRouter>
     );
