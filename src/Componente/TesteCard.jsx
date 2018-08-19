@@ -24,9 +24,11 @@ class TesteCard extends Component {
 
     render() {
         return (
-            <div className='col-sm-2'>
-                <div id='portifolio' className='container-fluid text-center bg-grey'>                    
-                    
+            //<div className='col-sm-2'>            
+
+            <div class='col-md-15 col-sm-3'>
+                <div id='portifolio' className='container-fluid text-center bg-grey'>
+
                     <div className='row text-center '>
                         {
                             Object.keys(this.state.portifolio)
@@ -34,8 +36,10 @@ class TesteCard extends Component {
                                     return <TesteCardItem key={key} conteudo={this.state.portifolio[key]} />
                                 })
                         }
-                    </div><br />                    
-                
+                    </div><br />
+                </div>
+
+                <div>
                     <div className='row text-center '>
                         {
                             Object.keys(this.state.portifolio)
@@ -44,8 +48,7 @@ class TesteCard extends Component {
                                 })
                         }
                     </div><br />
-                </div>    
-                
+                </div>
             </div >
         )
     }
